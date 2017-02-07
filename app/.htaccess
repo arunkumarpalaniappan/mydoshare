@@ -1,0 +1,15 @@
+ErrorDocument 403 /app/403.php
+ErrorDocument 404 /app/404.php
+ErrorDocument 500 /app/500.php
+Options -Indexes
+SetEnv SITE_WEBMASTER "Arunkumar Palaniappan"
+SetEnv SITE_WEBMASTER_URI mailto:contact@arunkumarpalaniappan.me
+ 
+UnSetEnv REMOTE_ADDR 
+
+RewriteEngine On
+
+RewriteRule ^verification/([a-zA-Z0-9_-]+)$ verification.php?id=$1
+RewriteRule ^verification/([a-zA-Z0-9_-]+)/$ verification.php?id=$1
+RewriteRule ^approve/([a-zA-Z0-9_-]+)$ approve.php?id=$1
+RewriteRule ^approve/([a-zA-Z0-9_-]+)/$ approve.php?id=$1

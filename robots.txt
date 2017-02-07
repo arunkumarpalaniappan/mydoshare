@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+Disallow: /app/php/
+Disallow: /app/bulid/
+Disallow: /app/dist/
+Disallow: /app/plugins/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /js/
