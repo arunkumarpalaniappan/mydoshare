@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
 <?php
@@ -45,8 +45,8 @@ $gpname = preg_replace('/\s+/', '', $gpname);
             }
             else
             {
-                $mysql1 = "CREATE TABLE `$grp1` (id int not null AUTO_INCREMENT primary key,billname varchar(50),total float(2,2),c_time TIMESTAMP default current_timestamp,createdby varchar(50),category varchar(50),$myuser float(2,2))";
-                $mysql2 = "CREATE TABLE `$grp2` (id int not null AUTO_INCREMENT primary key,billname varchar(50),total float(2,2),c_time TIMESTAMP default current_timestamp,createdby varchar(50),category varchar(50),$myuser float(2,2))";
+                $mysql1 = "CREATE TABLE `$grp1` (id int not null AUTO_INCREMENT primary key,billname varchar(50),total float,c_time TIMESTAMP default current_timestamp,createdby varchar(50),category varchar(50),$myuser )";
+                $mysql2 = "CREATE TABLE `$grp2` (id int not null AUTO_INCREMENT primary key,billname varchar(50),total float,c_time TIMESTAMP default current_timestamp,createdby varchar(50),category varchar(50),$myuser )";
                 $mysql3 = "UPDATE `_doshare_groups` SET groupn='$gpname' WHERE email='$myemail'";
                if(($conn->query($mysql1) === TRUE)&&($conn->query($mysql2)===TRUE))
                 {
