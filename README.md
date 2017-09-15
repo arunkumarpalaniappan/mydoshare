@@ -4,5 +4,5 @@ The Open-Source tool to share bills and IOUs with your flat mates/Friends for fr
 
 Just Clone this repository and configure mySQL and Use it.
 
-LICENSE - MIT 
+LICENSE - Mozilla Public License 2.0 
 
